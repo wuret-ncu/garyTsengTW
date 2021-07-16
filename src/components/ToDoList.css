@@ -1,3 +1,18 @@
 *{
     margin:5px;
 }
+
+label{
+    color: #fff;
+    text-shadow: 0px 0px 5px gray;
+}
+
+label, input{
+    cursor:pointer;
+
+}
+
+label:hover{
+    color: #ffd700;
+    font-size: 20px;
+}

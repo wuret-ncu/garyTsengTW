@@ -1,0 +1,17 @@
+input{
+    height: 20px;
+    padding: 5px;
+    font-size: 16px;
+    transition: 1s;
+    border-width: 0px;
+    border-bottom: 2px solid #ecdcc2;
+    background-color: rgb(225,174,113); 
+    text-shadow: 0px 0px 0.5px gray;
+    color:white;
+}
+
+
+input:focus{
+    outline: none;
+    border-color: #ffd700;
+}

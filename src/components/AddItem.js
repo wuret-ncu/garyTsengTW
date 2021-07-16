@@ -1,15 +1,16 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
+import {nanoid} from 'nanoid';
+import './Additem.css'
 
-
-
-function Add_item(props){
+function AddItem(props){
+    const [inputData, setData]=useState("");
     return(
         <div>
-            <input type="text" />
-            <button>add</button>
+            <input type="text" onChange={(e)=>{setData(e.target.value);}} />
+            <button onClick={() => props.changeItem({id:nanoid(), name:inputData, completed:false})}>新增</button>
             <br />
         </div>
     )
 }
 
-export default Add_item;
+export default AddItem;
