@@ -8,6 +8,8 @@ input{
     background-color: rgb(225,174,113); 
     text-shadow: 0px 0px 0.5px gray;
     color:white;
+    font-family: "Microsoft JhengHei", monospace, cursive;
+    text-shadow: 0px 0px 5px gray;
 }
 
 

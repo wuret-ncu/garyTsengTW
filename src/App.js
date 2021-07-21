@@ -37,6 +37,14 @@ class App extends React.Component {
     this.setState({ task: joined })
     //this.setState({ task: [...this.state.task, newTask] });
     //this.setState({task:this.state.task});
+    if(this.state.showState == "completed"){
+      joined = joined.filter(item => item.completed == true);
+      this.setState({taskCompleted : joined});
+    }
+    else if(this.state.showState == "notCompleted"){
+      joined = joined.filter(item => item.completed == false);
+      this.setState({taskNotCompleted : joined});
+    }
   }
 
   findAndDelete(e){ //找到要刪除的object並且刪除
