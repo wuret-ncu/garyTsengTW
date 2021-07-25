@@ -4,7 +4,7 @@ import './ToDoList.css'
 
 function Data(props) {
     return(
-        <div>
+        <div className="toDoListDiv">
             <input type="checkbox" name={props.id} id={props.id+"a"} onChange={props.changeCheckbox} checked = {props.completed? true:false} />
             <label for={props.id+"a"}>{props.name}</label>
             <button>Edit</button>

@@ -5,8 +5,8 @@ import './Additem.css'
 function AddItem(props){
     const [inputData, setData]=useState("");
     return(
-        <div>
-            <input type="text" onChange={(e)=>{setData(e.target.value);}} />
+        <div className="addItemDiv">
+            <input  type="text" onChange={(e)=>{setData(e.target.value);}} />
             <button onClick={() => props.changeItem({id:nanoid(), name:inputData, completed:false})}>新增</button>
             <br />
         </div>
